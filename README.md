@@ -5,7 +5,7 @@ A Retrieval-Augmented Generation (RAG) chatbot that uses a vector database for s
 ## Features
 
 - Text corpus preprocessing and chunking
-- Vector database for semantic search using FAISS
+- Vector database for semantic search using Chroma db
 - Sentence embeddings using Hugging Face's sentence-transformers
 - Chat history storage in PostgreSQL
 - Flask API endpoints for chat and history retrieval
@@ -76,7 +76,7 @@ python run.py
      ```json
      {
          "answer": "Generated answer",
-         "relevant_chunks": ["chunk1", "chunk2"]  // Optional
+         "relevant_chunks": ["chunk1", "chunk2"]  
      }
      ```
 
